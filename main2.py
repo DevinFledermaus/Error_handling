@@ -15,10 +15,10 @@ def check():
     try:
         # For when requirements are met
         if float(ent1.get()) >= 3000:
-            messagebox.showinfo("Congratulations", "You qualify for the Malaysia trip.")
+            messagebox.showinfo("Status Feedback", "Congratulations, You qualify for the Malaysia trip.")
         # For when requirements are not met
         else:
-            messagebox.showinfo("Sorry", "Please deposit more funds for this excursion.")
+            messagebox.showinfo("Status Feedback", "Sorry, Please deposit more funds for this excursion.")
         # For when inputs are invalid
     except ValueError as x:
         ent1.config(state="normal")
